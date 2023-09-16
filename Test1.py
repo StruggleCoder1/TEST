@@ -7,3 +7,4 @@ def printInfo(info):
 
 if __name__ == '__main__':
     printInfo('helloWorld!!!')
+print(1111)
