@@ -17,8 +17,9 @@ for start in range(0,250,25):
             all_links = title.findAll("span", attrs={"class": "title"})
             if '/' not in all_links:
                 if all_links:
-                    print((str(all_links)))
-                    result.append(all_links)
+                    for link in all_links[0]:
+                        print((str(link.text)))
+                        result.append(link.text)
             else:
                 print("请求失败")
 with open('C:/Users/25064/Desktop/douban.txt', 'w', encoding='utf-8') as f:
