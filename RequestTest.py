@@ -19,6 +19,7 @@ for start in range(0,250,25):
                 if all_links:
                     for link in all_links[0]:
                         print((str(link.text)))
+                        print(all_links[0]['class'][0])
                         result.append(link.text)
             else:
                 print("请求失败")

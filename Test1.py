@@ -49,3 +49,5 @@ if __name__ == '__main__':
 
     #    测试字典
     testDict(dict)
+    for i in range(1, 769, 20):
+        print(i)
